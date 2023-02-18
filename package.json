@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Andreas Bocsariol Portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "portfolio with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "develop": "^1.0.0",
     "gatsby": "^5.3.3",
@@ -23,6 +22,7 @@
     "run": "^1.4.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.1"
   },
   "keywords": [
@@ -30,6 +30,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
