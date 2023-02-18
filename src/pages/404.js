@@ -1,49 +1,34 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Footer from "../components/footer"
+import Header from "../components/navigation"
+import "../styles/main.css"
 
-const paragraphStyles = {
-  marginBottom: 48,
+class ErrorPage extends React.Component {
+    render() {
+        return (
+            <div className="main-page">
+                <Header/>
+                <div className="container">
+                    <div className="row">
+                        <div id="ErrorPage">
+                          <h1>404 Error</h1>
+                          <p>Oops, looks like something went wrong. There are a few reasons that could explain why you're seeing this.</p>
+                          <ul>
+                              <li>The page doesn't exist.</li>
+                              <li>The wrong URL was entered.</li>
+                              <li>A butterfly in Brazil flapped its wings, causing a chain reaction that resulted in the page not being found.</li>
+                          </ul>
+                          <Link to="/">Go to home page.</Link>
+                    </div>
+                  </div>
+              </div>
+              <Footer />
+          </div>
+        )
+    }
 }
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+export const Head = () => <title>404 :(</title>
 
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
-
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+export default ErrorPage

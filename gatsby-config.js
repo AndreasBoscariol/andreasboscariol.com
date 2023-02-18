@@ -1,9 +1,18 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Andreas Boscariol`,
+    siteUrl: `https://www.andreasboscariol.com`,
+    description: `portfolio`,
+
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.example.com',
+        sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
+  ]
 }
