@@ -6,11 +6,11 @@ class Navigation extends React.Component {
         return (
             <div className="container">
                 <nav className="main-navbar">
-                    <a className="nav-link" href="https://andreasboscariol.com/">/home</a>
-                    <a className="nav-link" href="https://andreasboscariol.com/about">/about</a>
-                    <a className="nav-link" href="https://andreasboscariol.com/projects">/projects</a>
-                    <a className="nav-link" href="https://andreasboscariol.com/work">/work</a>
-                    <a className="nav-link" href="https://andreasboscariol.com/">/contact</a>
+                    <Link className="nav-link" to="/">/home</Link>
+                    <Link className="nav-link" to="/about">/about</Link>
+                    <Link className="nav-link" to="/projects">/projects</Link>
+                    <Link className="nav-link" to="/work">/work</Link>
+                    <Link className="nav-link" to="/">/contact</Link>
                 </nav>
             </div>
         )
