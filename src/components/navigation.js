@@ -7,10 +7,9 @@ class Navigation extends React.Component {
             <div className="container">
                 <nav className="main-navbar">
                     <Link className="nav-link" to="/">/home</Link>
-                    <Link className="nav-link" to="/about">/about</Link>
-                    <Link className="nav-link" to="/projects">/projects</Link>
-                    <Link className="nav-link" to="/work">/work</Link>
-                    <Link className="nav-link" to="/">/contact</Link>
+                    <Link className="nav-link" to="/projects">/projects ⚠️</Link>
+                    <Link className="nav-link" to="/work">/work ⚠️</Link>
+                    <Link className="nav-link" to="/contact">/contact</Link>
                 </nav>
             </div>
         )

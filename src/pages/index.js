@@ -13,9 +13,9 @@ class IndexPage extends React.Component {
          <div className="container">
             <div className="row">
                 <div>
-                    <h1 className="main-reveal-text-short">Hi, I'm Andreas.<br />I do mechanical engineering.</h1>
+                    <h1 className="main-reveal-text-short">Hi, I'm Andreas.<br />I do  engineering.</h1>
                     <div className="main-fade-in-animation">
-                      <p>I'm a 19 year old security researcher studying Mechanical Engineering at the University of .</p>
+                      <p>I'm a 18 year old student studying Engineering at the University of British Columbia.</p>
                     </div>
                 </div>
               </div>
