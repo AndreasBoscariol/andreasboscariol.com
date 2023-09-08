@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
                 Interested in learning more about my background, skills, and experience? Please click the link below to download a copy of my resume.
               </p>
               <p>
-                📄 <a href="/ab_resume.pdf">Download Resume</a>
+                📄 <a href="/ab_resume.pdf">Download Resume</a> 
               </p>
             </div>
           </div>
