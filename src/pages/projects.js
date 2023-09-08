@@ -8,14 +8,14 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div className="main-page">
-        <Header />
+        <Header/>
           <div className="center-content">
             <div>
               <h1>🚧 Under Construction 🚧</h1>
               <p>Come back soon.</p>
             </div>
           </div>
-        <Footer />
+        <Footer/>
       </div>
     )
   }
