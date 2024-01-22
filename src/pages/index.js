@@ -26,6 +26,7 @@ class IndexPage extends React.Component {
   }
 }
 
+
 export const Head = () => <title>Home</title>
 
 export default IndexPage
